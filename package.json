@@ -25,14 +25,14 @@
     "recursive"
   ],
   "license": "Apache-2.0",
-  "main": "source/keyarray-has.js",
+  "main": "keyarray-has.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/kemitchell/keyarray-has.js.git"
   },
   "scripts": {
     "check": "check-versions --check-module",
-    "lint": "jshint source && jscs source",
+    "lint": "jshint keyarray-has.js && jscs keyarray-has.js",
     "pre-commit": "npm run check && npm run lint && npm run test",
     "test": "literate-assertions < README.md | sed 's!keyarray-has!./!g' | node",
     "travis-ci": "npm run pre-commit"
