@@ -27,7 +27,7 @@
     "recursive"
   ],
   "license": "Apache-2.0",
-  "main": "source/index.js",
+  "main": "source/keyarray-has.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/ORGANIZATION/keyarray-has.js.git"
