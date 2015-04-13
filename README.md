@@ -9,22 +9,17 @@ Recursive hasOwnProperty taking a key array.
 ```javascript
 var has = require('keyarray-has');
 
-var object = {
-  a: {
-    b: 'value',
-    c: ['value', 'value']
-  }
-};
+has({}, null); // throws TypeError
 
-has(object, ['a', 'b']);
-// true
+has(null, [0]); // throws TypeError
 
-has(object, ['x']);
-// false
+has({a: 1}, ['a']) // === true
 
-has(object, ['a', 'c', 1]);
-// true
+has({a: 1}, ['b']) // === false
 
-has(object, ['a', 'c', 2]);
-// false
+has({a: {b: 1}}, ['a', 'b']) // === true
+
+has({a: {b: 1}}, ['a', 'c']) // === false
+
+has({a: ['string']}, ['a', 0]) // === true
 ```
