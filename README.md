@@ -8,18 +8,23 @@ Recursive hasOwnProperty taking a key array.
 
 ```javascript
 var has = require('keyarray-has')
+var assert = require('assert')
 
-has({}, null) // throws TypeError
+assert.throws(function () {
+  has({}, null)
+}, TypeError)
 
-has(null, [0]) // throws TypeError
+assert.throws(function () {
+  has(null, [0])
+}, TypeError)
 
-has({a: 1}, ['a']) // === true
+assert(has({a: 1}, ['a']) === true)
 
-has({a: 1}, ['b']) // === false
+assert(has({a: 1}, ['b']) === false)
 
-has({a: {b: 1}}, ['a', 'b']) // === true
+assert(has({a: {b: 1}}, ['a', 'b']) === true)
 
-has({a: {b: 1}}, ['a', 'c']) // === false
+assert(has({a: {b: 1}}, ['a', 'c']) === false)
 
-has({a: ['string']}, ['a', 0]) // === true
+assert(has({a: ['string']}, ['a', 0]) === true)
 ```
