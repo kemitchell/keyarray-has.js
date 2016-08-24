@@ -12,5 +12,3 @@ module.exports = function has (object, keyArray) {
     return false
   }
 }
-
-module.exports.version = '0.1.0'
