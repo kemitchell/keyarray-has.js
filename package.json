@@ -1,7 +1,7 @@
 {
   "name": "keyarray-has",
   "description": "recursive hasOwnProperty taking an array of keys",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com)",
   "files": [
     "index.js"
