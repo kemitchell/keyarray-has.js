@@ -3,6 +3,9 @@
   "description": "recursive hasOwnProperty taking an array of keys",
   "version": "0.1.0",
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com)",
+  "files": [
+    "index.js"
+  ],
   "devDependencies": {
     "defence-cli": "^2.0.0",
     "replace-require-self": "^1.1.1",
