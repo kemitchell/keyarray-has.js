@@ -7,11 +7,11 @@ keyarray-has.js
 Recursive hasOwnProperty taking a key array.
 
 ```javascript
-var has = require('keyarray-has');
+var has = require('keyarray-has')
 
-has({}, null); // throws TypeError
+has({}, null) // throws TypeError
 
-has(null, [0]); // throws TypeError
+has(null, [0]) // throws TypeError
 
 has({a: 1}, ['a']) // === true
 
