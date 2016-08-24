@@ -2,18 +2,13 @@
   "name": "keyarray-has",
   "description": "recursive hasOwnProperty taking an array of keys",
   "version": "0.1.0",
-  "author": {
-    "name": "Kyle E. Mitchell",
-    "email": "kyle@kemitchell.com",
-    "url": "http://kemitchell.com/"
-  },
+  "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com)",
   "bugs": "https://github.com/kemitchell/keyarray-has.js/issues",
   "devDependencies": {
     "defence-cli": "^2.0.0",
     "replace-require-self": "^1.1.1",
     "standard": "^8.0.0"
   },
-  "homepage": "https://github.com/kemitchell/keyarray-has.js",
   "keywords": [
     "arrays",
     "deep",
@@ -24,10 +19,7 @@
     "recursive"
   ],
   "license": "Apache-2.0",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/kemitchell/keyarray-has.js.git"
-  },
+  "repository": "kemitchell/keyarray-has.js",
   "scripts": {
     "lint": "standard",
     "test": "defence -i javascript README.md | replace-require-self | node"
